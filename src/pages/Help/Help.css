@@ -1,0 +1,18 @@
+.help-page {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+  
+  .help-card {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f9faf1; /* Adjust background color here */
+  }
+  
+  .help-card h3 {
+    margin-top: 30px;
+  }
+  

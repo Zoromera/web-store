@@ -1,0 +1,121 @@
+/* Home.css */
+
+body {
+  height: 50vw;
+  margin: 30px auto;
+  background-size: contain;
+  position: relative;
+  background: url("/public/R.jpeg");
+}
+
+.home-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 90%;
+  max-height: 90%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
+}
+
+.home-content {
+  text-align: center;
+  background: rgba(32, 3, 3, 0.522); /* Semi-transparent background for readability */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px 20px;
+  max-width: 1340px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.home-content h2 {
+  font-weight: 500;
+  color: rgba(218, 220, 240, 0.819);
+  font-size: max(4.5vw, 22px);
+  background-color: transparent;
+}
+
+.home-content p {
+  color: rgba(245, 245, 245, 0.766);
+  font-size: 2.2vw;
+  background-color: transparent;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start; /* Align the button to the left */
+}
+
+.view-store-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: white;
+  background-color: #000408a2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-store-button:hover {
+  background-color: #b9bcc275;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  /* Add margin on the right for small screens */
+  @media (max-width: 768px) {
+    .home-container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 1.5vw;
+      max-width: 90%;
+      max-height: 20%;
+      bottom: 30%;
+      left: 6vw;
+      animation: fadeIn 3s;
+    }
+
+    .home-content h2 {
+      font-weight: 600;
+      color: rgba(218, 220, 240, 0.819);
+      font-size: max(5.5vw, 22px);
+      background-color: transparent;
+    }
+    
+    .home-content p {
+      color: rgba(245, 245, 245, 0.766);
+      font-size: 4.2vw;
+      background-color: transparent;
+    }
+
+    .view-store-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 2.2vw;
+      font-weight: bold;
+      color: white;
+      background-color: #000408a2;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  }
+  

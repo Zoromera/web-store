@@ -1,0 +1,103 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.left a {
+  text-decoration: none;
+  color: #1a1a2e;
+}
+
+.left a:hover {
+  text-decoration: underline;
+  text-decoration-color: gray;
+}
+
+.middle {
+  display: flex;
+  gap: 20px;
+}
+
+.middle a {
+  text-decoration: none;
+  color: #1a1a2e;
+  font-size: 16px;
+}
+
+.middle a:hover {
+  text-decoration: underline;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-button {
+  background-color: transparent;
+  border: 1px solid #b22222;
+  color: #b22222;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #353434;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.close-hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.middle.open {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 84px; /* Adjust based on your header height */
+  right: 20px;
+  background: rgba(252, 252, 253, 0.893);
+  padding: 10px;
+  border: 1px solid #fbfafa7c;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .middle {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .middle.open .close-hamburger {
+    display: block;
+  }
+}
